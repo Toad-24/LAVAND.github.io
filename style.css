@@ -4,17 +4,12 @@
     --blue: #1597ff;
     --blue-dark: #0877d1;
     --blue-light: #eaf6ff;
-
     --text: #16324f;
     --text-light: #66788a;
-
     --white: #ffffff;
     --background: #f8fbff;
-
     --border: #e7eef5;
-
     --shadow: 0 20px 50px rgba(39, 100, 150, 0.10);
-
     --radius: 24px;
 }
 
@@ -44,19 +39,15 @@ a {
     width: min(1150px, 92%);
     margin: auto;
 }
-/* LOGO */
+/* ===============LOGO============== */
 .logo-circle {
     width: 46px;
     height: 46px;
-
     border-radius: 50%;
-
     background: var(--blue-light);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     overflow: hidden;
 }
 
@@ -65,7 +56,8 @@ a {
     height: 100%;
     object-fit: cover;
     display: block;
-}/* ================= HEADER ================= */
+}
+/* ================= HEADER ================= */
 
 .header {
     position: sticky;
