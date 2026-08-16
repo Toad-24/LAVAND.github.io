@@ -1,358 +1,508 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ==============================
-       SEO / METADATOS
-       MODIFICAR AQUÍ
-  ================================ -->
-  <title>Lavandería Burbujas | Limpieza y cuidado de tus prendas</title>
-  <meta name="description" content="Lavandería Burbujas: cuidamos tus prendas con limpieza, dedicación y atención personalizada. Contáctanos directamente por WhatsApp.">
-  <meta name="theme-color" content="#0E7C9C">
+    <title>Lavandería Burbujas | Limpieza, cuidado y confianza</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Lavandería Burbujas | Limpieza y cuidado de tus prendas">
-  <meta property="og:description" content="Cuidamos cada prenda como si fuera nuestra. Escríbenos por WhatsApp y solicita tu servicio.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/hero-lavanderia.jpg">
-  <meta property="og:locale" content="es_PE">
+    <meta
+        name="description"
+        content="Lavandería Burbujas. Servicio de lavado, secado y cuidado de prendas. Atención rápida y profesional."
+    >
 
-  <!-- Favicon (reemplaza /assets/icons/favicon.svg por el tuyo si lo deseas) -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (iconos) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
+
 <body>
 
-  <!-- ==============================================
-       DATOS DEL NEGOCIO — MODIFICAR AQUÍ
-       Cambia el número de WhatsApp en js/script.js
-       (constante WHATSAPP_NUMBER) para actualizarlo
-       en TODA la página de una sola vez.
-  =================================================== -->
+    <!-- ================= HEADER ================= -->
 
-  <!-- Botón "saltar al contenido" para accesibilidad -->
-  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+    <header class="header">
 
-  <!-- ============ NAVBAR ============ -->
-  <header class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="#inicio" class="navbar__brand">
-        <span class="navbar__bubble" aria-hidden="true">
-          <i class="fa-solid fa-water"></i>
-        </span>
-        <span class="navbar__name">Lavandería <strong>Burbujas</strong></span>
-      </a>
+        <div class="container nav">
 
-      <nav class="navbar__nav" id="navbarNav" aria-label="Navegación principal">
-        <a href="#inicio" class="navbar__link">Inicio</a>
-        <a href="#servicios" class="navbar__link">Servicios</a>
-        <a href="#nosotros" class="navbar__link">Nosotros</a>
-        <a href="#como-funciona" class="navbar__link">¿Cómo funciona?</a>
-        <a href="#contacto" class="navbar__link">Contacto</a>
-        <a href="#" class="btn btn--whatsapp btn--sm js-whatsapp" data-wa-message="Hola, Lavandería Burbujas. Quisiera información sobre sus servicios.">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
-      </nav>
+            <a href="#inicio" class="logo">
+                <div class="logo-circle">
+                    <i class="fa-solid fa-soap"></i>
+                </div>
 
-      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarNav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="inicio">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="hero__bubbles" aria-hidden="true">
-        <span class="bubble b1"></span>
-        <span class="bubble b2"></span>
-        <span class="bubble b3"></span>
-        <span class="bubble b4"></span>
-        <span class="bubble b5"></span>
-        <span class="bubble b6"></span>
-      </div>
-
-      <div class="container hero__inner">
-        <div class="hero__content reveal">
-          <p class="eyebrow"><i class="fa-solid fa-droplet"></i> Lavandería Burbujas</p>
-          <h1 class="hero__title">Tu ropa limpia, fresca y lista para volver a disfrutar.</h1>
-          <p class="hero__subtitle">En Lavandería Burbujas cuidamos cada prenda como si fuera nuestra.</p>
-
-          <div class="hero__actions">
-            <a href="#" class="btn btn--whatsapp btn--lg js-whatsapp" data-wa-message="Hola, Lavandería Burbujas. Quisiera información sobre sus servicios.">
-              <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
+                <div>
+                    <span>Lavandería</span>
+                    <strong>Burbujas</strong>
+                </div>
             </a>
-            <a href="#servicios" class="btn btn--outline btn--lg">
-              Ver nuestros servicios
-              <i class="fa-solid fa-arrow-right-long"></i>
-            </a>
-          </div>
 
-          <ul class="hero__trust">
-            <li><i class="fa-solid fa-circle-check"></i> Atención rápida</li>
-            <li><i class="fa-solid fa-circle-check"></i> Trato cuidadoso</li>
-            <li><i class="fa-solid fa-circle-check"></i> Coordinación por WhatsApp</li>
-          </ul>
-        </div>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
 
-        <div class="hero__media reveal" style="--delay:120ms">
-          <!-- CAMBIAR IMAGEN DEL HERO AQUÍ -->
-          <!-- Reemplaza el archivo assets/images/hero-lavanderia.jpg manteniendo el mismo nombre -->
-          <img
-            src="assets/images/hero-lavanderia.jpg"
-            alt="Lavandería moderna con lavadoras y ropa limpia recién lavada"
-            class="hero__image"
-            width="1600" height="1200"
-            loading="eager">
-          <div class="hero__media-glow" aria-hidden="true"></div>
-        </div>
-      </div>
-
-      <svg class="wave-divider" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,64 C240,120 480,0 720,32 C960,64 1200,112 1440,48 L1440,120 L0,120 Z"></path>
-      </svg>
-    </section>
-
-    <!-- ============ SERVICIOS ============ -->
-    <section class="section" id="servicios">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow eyebrow--center">Nuestros servicios</p>
-          <h2 class="section__title">Todo lo que tu ropa necesita, en un solo lugar</h2>
-          <p class="section__subtitle">Servicios pensados para que tus prendas reciban el cuidado que merecen.</p>
-        </div>
-
-        <div class="grid grid--services">
-          <article class="card reveal">
-            <div class="card__icon"><i class="fa-solid fa-soap"></i></div>
-            <h3 class="card__title">Lavado de ropa</h3>
-            <p class="card__text">Lavado cuidadoso de tus prendas del día a día, cuidando color y textura.</p>
-          </article>
-
-          <article class="card reveal" style="--delay:60ms">
-            <div class="card__icon"><i class="fa-solid fa-shirt"></i></div>
-            <h3 class="card__title">Lavado y secado</h3>
-            <p class="card__text">Prendas lavadas y secas, listas para guardar o volver a usar de inmediato.</p>
-          </article>
-
-          <article class="card reveal" style="--delay:120ms">
-            <div class="card__icon"><i class="fa-solid fa-basket-shopping"></i></div>
-            <h3 class="card__title">Planchado</h3>
-            <p class="card__text">Acabado prolijo para que tus prendas luzcan impecables y bien presentadas.</p>
-          </article>
-
-          <article class="card reveal" style="--delay:180ms">
-            <div class="card__icon"><i class="fa-solid fa-sparkles"></i></div>
-            <h3 class="card__title">Cuidado de prendas</h3>
-            <p class="card__text">Atención especial a materiales delicados, cuidando cada detalle de tu ropa.</p>
-          </article>
-
-          <article class="card reveal" style="--delay:240ms">
-            <div class="card__icon"><i class="fa-solid fa-house-chimney"></i></div>
-            <h3 class="card__title">Recojo y entrega</h3>
-            <p class="card__text">Coordinamos contigo el recojo y la entrega de tus prendas por WhatsApp.</p>
-          </article>
-
-          <article class="card reveal" style="--delay:300ms">
-            <div class="card__icon"><i class="fa-solid fa-user-tie"></i></div>
-            <h3 class="card__title">Prendas especiales</h3>
-            <p class="card__text">Lavado de prendas que requieren un trato particular y más cuidadoso.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ¿POR QUÉ ELEGIRNOS? ============ -->
-    <section class="section section--alt" id="nosotros">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow eyebrow--center">¿Por qué elegirnos?</p>
-          <h2 class="section__title">Más que una lavandería, cuidamos lo que usas todos los días.</h2>
-        </div>
-
-        <div class="grid grid--benefits">
-          <div class="benefit reveal">
-            <span class="benefit__icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
-            <h3>Cuidado de tus prendas</h3>
-            <p>Tratamos cada prenda con atención, como si fuera nuestra.</p>
-          </div>
-          <div class="benefit reveal" style="--delay:60ms">
-            <span class="benefit__icon"><i class="fa-solid fa-bolt"></i></span>
-            <h3>Atención rápida</h3>
-            <p>Respuesta ágil desde el primer mensaje por WhatsApp.</p>
-          </div>
-          <div class="benefit reveal" style="--delay:120ms">
-            <span class="benefit__icon"><i class="fa-solid fa-star"></i></span>
-            <h3>Excelente limpieza</h3>
-            <p>Procesos pensados para dejar tu ropa realmente limpia y fresca.</p>
-          </div>
-          <div class="benefit reveal" style="--delay:180ms">
-            <span class="benefit__icon"><i class="fa-solid fa-comments"></i></span>
-            <h3>Atención personalizada</h3>
-            <p>Coordinamos contigo cada detalle, de forma directa y cercana.</p>
-          </div>
-          <div class="benefit reveal" style="--delay:240ms">
-            <span class="benefit__icon"><i class="fa-solid fa-broom"></i></span>
-            <h3>Procesos cuidadosos</h3>
-            <p>Cada paso está pensado para cuidar la calidad de tus prendas.</p>
-          </div>
-          <div class="benefit reveal" style="--delay:300ms">
-            <span class="benefit__icon"><i class="fa-brands fa-whatsapp"></i></span>
-            <h3>Atención directa por WhatsApp</h3>
-            <p>Escríbenos y coordina tu servicio sin complicaciones.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SECCIÓN DE IMAGEN GRANDE ============ -->
-    <section class="showcase reveal">
-      <!-- CAMBIAR IMAGEN DE ESTA SECCIÓN AQUÍ -->
-      <!-- Reemplaza el archivo assets/images/lavanderia.jpg manteniendo el mismo nombre -->
-      <img
-        src="assets/images/lavanderia.jpg"
-        alt="Ropa limpia y doblada, lista para ser entregada"
-        class="showcase__image"
-        loading="lazy">
-      <div class="showcase__overlay">
-        <p class="showcase__quote">“Cuidamos tu ropa, cuidamos tus momentos.”</p>
-      </div>
-    </section>
-
-    <!-- ============ ¿CÓMO FUNCIONA? ============ -->
-    <section class="section" id="como-funciona">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow eyebrow--center">¿Cómo funciona?</p>
-          <h2 class="section__title">Cuatro pasos, sin complicaciones</h2>
-        </div>
-
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step__number">01</span>
-            <h3 class="step__title">Escríbenos</h3>
-            <p class="step__text">Contáctanos directamente por WhatsApp.</p>
-          </li>
-          <li class="step reveal" style="--delay:60ms">
-            <span class="step__number">02</span>
-            <h3 class="step__title">Cuéntanos qué necesitas</h3>
-            <p class="step__text">Indícanos qué prendas o servicio necesitas.</p>
-          </li>
-          <li class="step reveal" style="--delay:120ms">
-            <span class="step__number">03</span>
-            <h3 class="step__title">Coordinamos</h3>
-            <p class="step__text">Coordinamos los detalles contigo.</p>
-          </li>
-          <li class="step reveal" style="--delay:180ms">
-            <span class="step__number">04</span>
-            <h3 class="step__title">¡Listo!</h3>
-            <p class="step__text">Recibe tu ropa limpia y lista.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ CTA ============ -->
-    <section class="cta reveal">
-      <div class="cta__bubbles" aria-hidden="true">
-        <span class="bubble b1"></span>
-        <span class="bubble b2"></span>
-        <span class="bubble b3"></span>
-      </div>
-      <div class="container cta__inner">
-        <h2 class="cta__title">¿Tienes ropa que necesita un poco de amor? <span aria-hidden="true">🫧</span></h2>
-        <p class="cta__text">Estamos listos para ayudarte.</p>
-        <a href="#" class="btn btn--whatsapp btn--lg js-whatsapp" data-wa-message="Hola, Lavandería Burbujas. Quisiera información sobre sus servicios.">
-          <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
-        </a>
-      </div>
-    </section>
-
-    <!-- ============ CONTACTO ============ -->
-    <section class="section" id="contacto">
-      <div class="container">
-        <div class="contact reveal">
-          <div class="contact__info">
-            <p class="eyebrow">Contacto</p>
-            <h2 class="section__title">Lavandería Burbujas</h2>
-            <p class="contact__text">Escríbenos y con gusto te ayudamos a coordinar tu servicio.</p>
-
-            <ul class="contact__list">
-              <li>
+            <a
+                href="https://wa.me/51999999999?text=Hola%20Lavander%C3%ADa%20Burbujas%2C%20quiero%20informaci%C3%B3n."
+                class="nav-whatsapp"
+                target="_blank"
+            >
                 <i class="fa-brands fa-whatsapp"></i>
-                <span>WhatsApp: <strong class="js-whatsapp-number">+51 970 208 167</strong></span>
-              </li>
-              <!--
-                Datos opcionales para agregar más adelante:
-                - Dirección física
-                - Horario de atención
-                - Redes sociales
-                Agrega aquí un <li> nuevo cuando los tengas disponibles.
-              -->
-            </ul>
-
-            <a href="#" class="btn btn--whatsapp btn--lg js-whatsapp" data-wa-message="Hola, Lavandería Burbujas. Quisiera información sobre sus servicios.">
-              <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+                WhatsApp
             </a>
-          </div>
 
-          <div class="contact__card">
-            <div class="contact__card-icon"><i class="fa-solid fa-water"></i></div>
-            <p class="contact__card-title">Horario de atención</p>
-            <p class="contact__card-text">Próximamente. Escríbenos por WhatsApp para conocer disponibilidad.</p>
-          </div>
         </div>
-      </div>
-    </section>
 
-  </main>
+    </header>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="navbar__bubble" aria-hidden="true"><i class="fa-solid fa-water"></i></span>
-        <div>
-          <p class="footer__name">Lavandería Burbujas</p>
-          <p class="footer__slogan">Cuidamos tu ropa, cuidamos tus momentos.</p>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="small-title">
+                        <i class="fa-solid fa-sparkles"></i>
+                        Cuidado que se nota
+                    </span>
+
+                    <h1>
+                        Tu ropa limpia,
+                        <span>fresca y lista.</span>
+                    </h1>
+
+                    <p>
+                        En Lavandería Burbujas cuidamos tus prendas con
+                        limpieza, dedicación y rapidez.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="https://wa.me/51999999999?text=Hola%20Lavander%C3%ADa%20Burbujas%2C%20quiero%20cotizar%20un%20servicio."
+                            target="_blank"
+                            class="btn-primary"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Escríbenos por WhatsApp
+                        </a>
+
+                        <a href="#servicios" class="btn-secondary">
+                            Ver servicios
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-features">
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Atención rápida</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Cuidado profesional</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Excelente limpieza</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-3"></div>
+
+                    <div class="washing-machine">
+                        <i class="fa-solid fa-soap"></i>
+                    </div>
+
+                    <div class="hero-card-text">
+
+                        <span>Lavandería</span>
+
+                        <h2>Burbujas</h2>
+
+                        <p>
+                            Limpieza que hace la diferencia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICIOS ================= -->
+
+        <section id="servicios" class="services section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span>¿Qué hacemos?</span>
+
+                    <h2>
+                        Servicios pensados para ti
+                    </h2>
+
+                    <p>
+                        Nos encargamos de tus prendas para que tú puedas
+                        dedicar tu tiempo a lo importante.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+
+                        <h3>Lavado</h3>
+
+                        <p>
+                            Lavado cuidadoso para mantener tus prendas
+                            limpias y frescas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+
+                        <h3>Secado</h3>
+
+                        <p>
+                            Secado eficiente para dejar tu ropa lista
+                            para usar.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                        </div>
+
+                        <h3>Cuidado de prendas</h3>
+
+                        <p>
+                            Tratamos tus prendas con atención y cuidado
+                            durante todo el proceso.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+
+                        <h3>Servicio rápido</h3>
+
+                        <p>
+                            Una solución práctica para tener tu ropa
+                            lista sin complicaciones.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NOSOTROS ================= -->
+
+        <section id="nosotros" class="about section">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <div class="about-circle">
+
+                        <i class="fa-solid fa-soap"></i>
+
+                    </div>
+
+                    <div class="about-bubble b1"></div>
+                    <div class="about-bubble b2"></div>
+                    <div class="about-bubble b3"></div>
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <span class="section-label">
+                        Sobre nosotros
+                    </span>
+
+                    <h2>
+                        Más que limpiar,
+                        <span>cuidamos tu ropa.</span>
+                    </h2>
+
+                    <p>
+                        En Lavandería Burbujas creemos que cada prenda
+                        merece cuidado y atención.
+                    </p>
+
+                    <p>
+                        Trabajamos para ofrecer un servicio confiable,
+                        práctico y profesional para nuestros clientes.
+                    </p>
+
+
+                    <div class="about-items">
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+                                <strong>Limpieza</strong>
+                                <p>
+                                    Prendas limpias y frescas.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+                                <strong>Confianza</strong>
+                                <p>
+                                    Cuidamos tus prendas.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+                                <strong>Rapidez</strong>
+                                <p>
+                                    Servicio pensado para tu tiempo.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <div class="container cta-content">
+
+                <div>
+
+                    <span>
+                        ¿Necesitas lavar tu ropa?
+                    </span>
+
+                    <h2>
+                        Escríbenos por WhatsApp
+                    </h2>
+
+                    <p>
+                        Estamos listos para atenderte.
+                    </p>
+
+                </div>
+
+                <a
+                    href="https://wa.me/51999999999?text=Hola%20Lavander%C3%ADa%20Burbujas%2C%20quiero%20informaci%C3%B3n."
+                    target="_blank"
+                    class="btn-white"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Hablar por WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section id="contacto" class="contact section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span>Contáctanos</span>
+
+                    <h2>
+                        Estamos para ayudarte
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <h3>WhatsApp</h3>
+
+                        <p>
+                            Escríbenos directamente.
+                        </p>
+
+                        <a
+                            href="https://wa.me/51999999999"
+                            target="_blank"
+                        >
+                            Iniciar conversación
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>Ubicación</h3>
+
+                        <p>
+                            Agrega aquí la dirección de tu lavandería.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h3>Horario</h3>
+
+                        <p>
+                            Agrega aquí tus días y horarios de atención.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h3>
+                    Lavandería Burbujas
+                </h3>
+
+                <p>
+                    Limpieza, confianza y cuidado para tus prendas.
+                </p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a
+                    href="https://wa.me/51999999999"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
         </div>
-      </div>
 
-      <nav class="footer__links" aria-label="Enlaces del pie de página">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
 
-      <div class="footer__contact">
+        <div class="copyright">
+
+            © 2026 Lavandería Burbujas. Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+
+    <a
+        href="https://wa.me/51999999999?text=Hola%20Lavander%C3%ADa%20Burbujas%2C%20quiero%20informaci%C3%B3n."
+        target="_blank"
+        class="floating-whatsapp"
+        aria-label="Contactar por WhatsApp"
+    >
         <i class="fa-brands fa-whatsapp"></i>
-        <span class="js-whatsapp-number">+51 970 208 167</span>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>&copy; <span id="year">2026</span> Lavandería Burbujas. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    </a>
 
-  <!-- ============ BOTÓN FLOTANTE DE WHATSAPP ============ -->
-  <a href="#" class="whatsapp-float js-whatsapp" data-wa-message="Hola, Lavandería Burbujas. Quisiera información sobre sus servicios." aria-label="Contactar por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span class="whatsapp-float__ping" aria-hidden="true"></span>
-  </a>
 
-  <script src="js/script.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
